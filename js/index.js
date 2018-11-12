@@ -46,8 +46,8 @@ function updateInfo(id, time) {
 	if (str < 11) { str = "very hard" }
 	
 	
-	$('#e621id').html('Strength: ' + str);
-	$('#time').html('Time: ' + time);
+	$('#e621id').html('strength: ' + str);
+	$('#time').html('time: ' + time + ' s');
 
 	
 }
@@ -98,19 +98,20 @@ async function processImages(posts) {
 $(function() {
 	$('#submit').on('click', function() {
 		var id = parseInt($('#idtextbox').val(), 10);
+		var tags = $('#tagtextbox').val();
 		
 		var e621id = ~~(id / 100);
 		var score = id % 100;
-		var tags = "tf -f"
+
 		
 		console.log(e621id);
 		console.log(score);
 		
 
-		
+		$('#text').animate()
 		getPosts(tags + " score:>" + score + " order:id id:>" + e621id).then(function(posts) {
 			processImages(posts);
-		});	
+		});
 	
 	});
 });
