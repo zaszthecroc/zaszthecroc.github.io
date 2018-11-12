@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<title>IS KOORIVLF PURE?!?!?!?</title>
+	<link rel="stylesheet" href="css/index.css">
+	<title>Furry Porn Gauntlet</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-	<script src="js/main.js"></script>
+	<script src="js/index.js"></script>
 
 </head>
 <body>
-<input type="textbox" id="idtextbox" class="txt-box" placeholder="enter seed" maxlength="9"></input><button class="txt-btn" id="submit" type="button">SEARCH</button><button class="txt-btn btn-last" id="next" type="button">SKIP</button><br>
-<div id="timestart">Start next minute: <input id="timer" type="checkbox"></input></div>
-<div id="e621id"></div>
-<div id="time"></div>
+<div id="text" class="txt">
+	<input type="textbox" id="tagtextbox" class="txt-box tag-box" placeholder="tags" maxlength="30"></input><br>
+	<br><input type="textbox" id="idtextbox" class="txt-box" placeholder="enter seed" maxlength="9"></input>
+	<button class="txt-btn" id="submit" type="button">SEARCH</button>
+	<button class="txt-btn btn-last" id="next" type="button">SKIP</button><br>
+	<br><div class="txt-bck">
+		<div id="timestart">Start next minute: <input id="timer" type="checkbox" class="checkmark"></input></div>
+		<div id="e621id"></div>
+		<div id="time"></div>
+		</div>
+</div>
+
 <div id="img" class="img-box"></div>
 </body>
 </html>
