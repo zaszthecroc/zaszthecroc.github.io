@@ -93,7 +93,7 @@ $(function() {
 		var score = id % 100;
 
 		$('#text').animate()
-		getPosts(tags + " score:>" + score + " order:id id:>" + e621id).then(function(posts) {
+		getPosts("order:id " + tags + " score:>" + score + " id:>" + e621id).then(function(posts) {
 			processImages(posts);
 		});
 	});
