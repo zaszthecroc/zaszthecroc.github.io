@@ -1,2 +1,4 @@
-console.log("test");
-return "test2";
+function test(m) {
+  return "Test worked!";
+}
+test(arg);
