@@ -1,4 +1,4 @@
 function test(m) {
-  return "Test worked!";
+  return "Test worked! " + m;
 }
 test(arg);
