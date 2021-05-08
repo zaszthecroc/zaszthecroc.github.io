@@ -1,7 +1,7 @@
 function getPosts(tags) {
 	return $.ajax({
 		async: false,
-		url: "https://e621.net/posts.json?limit=100&tags=" + tags,
+		url: "https://e621.net/posts.json?limit=100&tags=" + tags + "&_client=Cummies/1.0%20(by%20zaszthecroc)",
 		dataType: "jsonp"
 	});
 }
