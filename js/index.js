@@ -69,7 +69,7 @@ async function processImages(posts) {
 	for (var post of posts) {
 		
 		id = post.id;
-		url = post.file_url;
+		url = post.file;
 		score = post.score;
 		link = "https://e621.net/post/show/" + id;
 		
