@@ -1,7 +1,7 @@
 function getPosts(tags) {
 	return $.ajax({
 		async: false,
-		url: "https://e621.net/post/index.json?limit=100&tags=" + tags,
+		url: "https://e621.net/posts.json?limit=100&tags=" + tags,
 		dataType: "jsonp"
 	});
 }
