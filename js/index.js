@@ -94,7 +94,7 @@ $(function() {
 
 		$('#text').animate()
 		getPosts("order:id " + tags + " score:>" + score + " id:>" + e621id).then(function(posts) {
-			processImages(posts);
+			processImages(posts["posts"]);
 		});
 	});
 });
